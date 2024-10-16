@@ -65,7 +65,7 @@ const AboutUs = () => {
                     </p>
                     <br />
                     <p>
-                    We at <b>444</b> understand these challenges firsthand. With our deep
+                    We at <b>Z4U</b> understand these challenges firsthand. With our deep
                     industry experience and passion for student success, we're committed
                     to guiding you towards a fulfilling tech career.
                     </p>
