@@ -1,0 +1,163 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>444 React App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+          --bg-color: #FFFAF0; /* Light theme default background color */
+          --text-color: #000000; /* Light theme default text color */
+          --highlight-color: #007bff; /* Light theme default highlight color */
+          --card-shadow: 0 0 15px rgba(0, 123, 255, 0.8); /* Light theme card shadow */
+          --text-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Light theme text shadow */
+          --link-color: #007bff; /* Light theme default link color */
+        }
+    
+        .dark-theme {
+          --bg-color: #212529; /* Dark theme background color */
+          --text-color: #fff; /* Dark theme text color */
+          --highlight-color: #007bff; /* Dark theme highlight color */
+          --card-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Dark theme card shadow */
+          --text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Dark theme text shadow */
+          --link-color: #007bff; /* Dark theme default link color */
+        }
+    
+        body {
+          font-family: 'Karla', sans-serif;
+          background-color: var(--bg-color);
+          color: var(--text-color);
+        }
+    
+        /* Additional styles for specific elements */
+        .attractive-text {
+          color: var(--text-color);
+          font-size: 1.5rem;
+          line-height: 1.6;
+          letter-spacing: 0.5px;
+          text-shadow: var(--text-shadow);
+        }
+    
+        .highlight {
+          color: var(--highlight-color);
+          font-weight: bold;
+        }
+    
+
+        .glow-card {
+          box-shadow: var(--card-shadow);
+          transition: box-shadow 0.3s ease-in-out;
+        }
+    
+        .glow-card:hover {
+          box-shadow: 0 0 25px rgba(var(--highlight-color), 1);
+        }
+    
+        .glow-text {
+          text-shadow: var(--text-shadow);
+        }
+    
+        /* Navigation bar styles */
+        .navbar {
+          background-color: var(--bg-color);
+          color: var(--text-color);
+        }
+    
+        .navbar-dark .navbar-brand {
+          color: var(--text-color);
+        }
+    
+        .navbar-dark .nav-link {
+          /* color: var(--text-color); */
+          color: #fff;
+          &:hover {
+            color: var(--highlight-color);
+          }
+        }
+    
+        /* Footer styles */
+        footer {
+          background-color: var(--bg-color);
+          color: var(--text-color);
+        }
+    
+        .copyright .mb-0 {
+          color: var(--text-color);
+        }
+    
+        /* Contact form styles */
+        .contact-left,
+        .contact-right {
+          color: var(--text-color);
+        }
+    
+        .social-icons a,
+        .social-icons1 a {
+          color: var(--text-color);
+        }
+    
+        .btn-primary {
+          background-color: var(--highlight-color);
+          border-color: var(--highlight-color);
+        }
+      </style>
+  </head>
+  <body>
+
+
+    <div id="root"></div>
+
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxQJdQ36jrdRolF1I1tVLKz2FrtkgBYPSIh2aupEvZvd1snULo5cX5xPp5KZbH7gPHz/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+      
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => 
+          {
+              msg.innerHTML = "Message sent successfully"
+              setTimeout(function()
+              {
+                  msg.innerHTML = ""
+              },5000)
+              form.reset()
+          }
+          )
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+      <script>
+          const themeToggle = document.getElementById("themeToggle");
+          const toggleIcon = document.getElementById("toggleIcon");
+          console.log(themeToggle);
+          themeToggle.addEventListener("click", () => {
+          document.body.classList.toggle("dark-theme");
+      
+          if (toggleIcon.classList.contains("fa-sun")) {
+              toggleIcon.classList.remove("fa-sun");
+              toggleIcon.classList.add("fa-moon");
+          } else {
+              toggleIcon.classList.remove("fa-moon");
+              toggleIcon.classList.add("fa-sun");   
+      
+          }
+          });
+      </script>
+    
+  </body>
+</html>
