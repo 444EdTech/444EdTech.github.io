@@ -12,6 +12,7 @@ import DSACoursePage from './DSACoursePage';
 import FullStackProgramPage from './FullStackProgramPage';
 import ITIndustryCoursePage from './ITIndustryCoursePage';
 import RegistrationPage from './RegistrationPage';
+import Connect from './Connect';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
 
         <Routes>
           <Route path="/" element={<LandingPage />} />
+
+          <Route path="/Connect" element={<Connect />} />
         </Routes>
         
         <Routes>
