@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function AlumniCard({ alumni }) {
   return (
@@ -14,7 +15,10 @@ function AlumniCard({ alumni }) {
               <p className="card-text"><strong>Company:</strong> {alumni.company}</p>
               <p className="card-text"><strong>Position:</strong> {alumni.position}</p>
               <p className="card-text"><strong>Location:</strong> {alumni.location}</p>
-              <button className="btn btn-connect">Connect</button>
+              {/* Pass alumni data in state */}
+              <Link to="/connection-request" state={{ alumni }}>
+                <button className="btn btn-primary">Connect</button>
+              </Link>
             </div>
           </div>
         </div>

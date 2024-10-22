@@ -4,11 +4,43 @@ import SearchBar from './SearchBar';
 import './Connect.css';
 
 const alumniData = [
-  { name: 'Sai Ram Charan', company: 'Digital Trust', position: 'Software Engineer', location: 'Hyderabad', image: 'https://via.placeholder.com/100' },
-  { name: 'Yaswanth', company: 'Jar, Khathabook', position: 'Growth', location: 'Bangalore', image: 'https://via.placeholder.com/100' },
-  { name: 'Varshitha', company: 'TCS Digital, TA Digital', position: 'Software Engineer', location: 'Hyderabad', image: 'https://via.placeholder.com/100' },
-  { name: 'Michael Brown', company: 'Web Solutions', position: 'Full Stack Developer', location: 'Chicago', image: 'https://via.placeholder.com/100' },
-  { name: 'Emily Davis', company: 'NextGen IT', position: 'Product Manager', location: 'Seattle', image: 'https://via.placeholder.com/100' }
+  {
+    name: 'Sai Ram Charan',
+    company: 'Digital Trust',
+    position: 'Software Engineer',
+    location: 'Hyderabad',
+    image: 'https://via.placeholder.com/150',
+    linkedin: 'https://www.linkedin.com/in/sairamcharan',
+    instagram: 'https://www.instagram.com/sairamcharan/',
+    leetcode: 'https://leetcode.com/sairamcharan/',
+    gfg: 'https://www.geeksforgeeks.org/user/sairamcharan/',
+    description: 'I am a passionate software engineer with experience in developing scalable web applications. I enjoy tackling complex problems and am always eager to learn new technologies.'
+  },
+{
+  name: 'Yaswanth',
+  company: 'Jar, Khathabook',
+  position: 'Growth',
+  location: 'Bangalore',
+  image: 'https://via.placeholder.com/150',
+  linkedin: 'https://www.linkedin.com/in/sairamcharan',
+  instagram: 'https://www.instagram.com/sairamcharan/',
+  leetcode: 'https://leetcode.com/sairamcharan/',
+  gfg: 'https://www.geeksforgeeks.org/user/sairamcharan/',
+  description: 'I am a passionate software engineer with experience in developing scalable web applications. I enjoy tackling complex problems and am always eager to learn new technologies.'
+},
+{
+  name: 'Varshitha kotari',
+  company: 'TCS Digital, TA Digital',
+  position: 'Software Engineer',
+  location: 'Hyderabad',
+  image: 'https://via.placeholder.com/150',
+  linkedin: 'https://www.linkedin.com/in/sairamcharan',
+  instagram: 'https://www.instagram.com/sairamcharan/',
+  leetcode: 'https://leetcode.com/sairamcharan/',
+  gfg: 'https://www.geeksforgeeks.org/user/sairamcharan/',
+  description: 'I am a passionate software engineer with experience in developing scalable web applications. I enjoy tackling complex problems and am always eager to learn new technologies.'
+},
+
 ];
 
 function Connect() {

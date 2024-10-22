@@ -13,6 +13,7 @@ import FullStackProgramPage from './FullStackProgramPage';
 import ITIndustryCoursePage from './ITIndustryCoursePage';
 import RegistrationPage from './RegistrationPage';
 import Connect from './Connect';
+import ConnectionRequest from './ConnectionRequest';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
 
           <Route path="/Connect" element={<Connect />} />
+          <Route path="/Connection-request" element={<ConnectionRequest />} />
         </Routes>
         
         <Routes>

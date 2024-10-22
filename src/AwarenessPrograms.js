@@ -60,8 +60,7 @@ const AwarenessPrograms = () => {
                 </div>
             </div>
         </div>
-    </div>
-
+        </div>
      );
 }
  
