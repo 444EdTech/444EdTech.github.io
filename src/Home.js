@@ -23,15 +23,16 @@ const Home = () => {
     return (
         <>
             <div className="container-fluid pt-5">
-                <div className="row align-items-center" style={{ minHeight: "95vh" }}>
+                <div className="row align-items-center" style={{ minHeight: "100vh" }}>
                     
                     {/* Left Column with Typing Effect and Text */}
                     <div className="col-sm-8 d-flex flex-column justify-content-center align-items-center">
                         
                         {/* Typing Effect */}
-                        <div className="typing-container mb-2" style={{color: 'blue'}}>
+                        <div className="typing-container mb-2" style={{color: 'blue', whiteSpace: 'normal', wordWrap: 'break-word', overflowWrap: 'break-word'}}>
                             <b><span id="typing-text"></span></b>
                         </div>
+
 
                         {/* Text Content Below Typing Effect */}
                         <div>

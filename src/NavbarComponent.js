@@ -39,17 +39,12 @@ const NavbarComponent = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/#Home">
+              <Link className="nav-link" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/#AboutUs">
-                About Us
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/#AwarenessPrograms">
+              <Link className="nav-link" to="/AwarenessPrograms">
                 Awareness Programs
               </Link>
             </li>
@@ -59,12 +54,12 @@ const NavbarComponent = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/#Founders">
+              <Link className="nav-link" to="/Founders">
                 Founders
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/#ContactUs">
+              <Link className="nav-link" to="/ContactUs">
                 Contact Us
               </Link>
             </li>

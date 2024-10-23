@@ -5,6 +5,8 @@ import AwarenessPrograms from "./AwarenessPrograms";
 import ContactUs from "./ContactUs";
 import Founders from "./Founders";
 import Home from "./Home";
+import AlumniConnectLandingPage from './AlumniConnectLandinPage';
+import ScrollableAlumni from './ScrollableAlumni';
 
 const LandingPage = () => {
     const { hash } = useLocation();
@@ -19,13 +21,14 @@ const LandingPage = () => {
     }, [hash]);
 
     return ( 
-        <div>
+        <>
             <div id="Home"><Home /></div>
             <div id="AboutUs"><AboutUs /></div>
             <div id="AwarenessPrograms"><AwarenessPrograms /></div>
+            <div id="AlumniConnectLandingPage"><ScrollableAlumni /></div>
             <div id="Founders"><Founders /></div>
             <div id="ContactUs"><ContactUs /></div>
-        </div>
+        </>
     );
 }
 

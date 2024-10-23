@@ -1,0 +1,48 @@
+.scrollable-alumni-container {
+    width: 100%; /* Full width */
+}
+
+.scrollable-alumni {
+    display: flex;
+    gap: 10px;
+}
+
+.alumni-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-width: 200px; /* Minimum width for each card */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Make sure there's no margin between cards */
+.alumni-image {
+    width: 100%; /* Make the image responsive */
+    border-radius: 10px;
+}
+
+.company-logo {
+    width: 40px; /* Set a fixed width for the company logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.next-page-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow-button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #007bff; /* Change color as needed */
+  }
+  
+  .arrow-button:hover {
+    color: #0056b3; /* Darken the color on hover */
+  }
+  

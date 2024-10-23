@@ -3,8 +3,8 @@ import image2 from './images/work-44.png';
 
 const AboutUs = () => {
     return ( 
-        <div id="AboutUs" style={{ paddingTop: '65px' }}>
-            <div className="container p-5">
+        <div id="AboutUs">
+            <div className="container px-5">
                 <div
                 className="row bg-info align-items-center justify-content-center"
                 style={{ minHeight: "10vh" }}
@@ -47,7 +47,7 @@ const AboutUs = () => {
                 </div>
                 </div>
             </div>
-            <div className="container p-5">
+            <div className="container px-5 py-3">
                 <div className="row">
                 <div className="col-sm-8">
                     <h1 className="text-primary">What We Do</h1>
@@ -65,7 +65,7 @@ const AboutUs = () => {
                     </p>
                     <br />
                     <p>
-                    We at <b>Z4U</b> understand these challenges firsthand. With our deep
+                    We at <b>Z444</b> understand these challenges firsthand. With our deep
                     industry experience and passion for student success, we're committed
                     to guiding you towards a fulfilling tech career.
                     </p>
@@ -87,7 +87,7 @@ const AboutUs = () => {
                 </div>
                 </div>
             </div>
-            <div className="container p-5">
+            <div className="container px-5 py-3">
                 <h1 className="text-center mb-4 text-primary">What we are for!!</h1>
                 <div className="row">
                 {/* Card 1 */}

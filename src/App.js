@@ -14,6 +14,9 @@ import ITIndustryCoursePage from './ITIndustryCoursePage';
 import RegistrationPage from './RegistrationPage';
 import Connect from './Connect';
 import ConnectionRequest from './ConnectionRequest';
+import AwarenessPrograms from './AwarenessPrograms';
+import Founders from './Founders';
+import ContactUs from './ContactUs';
 
 function App() {
   return (
@@ -21,15 +24,25 @@ function App() {
     <Router>
       <div className="App">
         <NavbarComponent />
-
         <Routes>
           <Route path="/" element={<LandingPage />} />
 
           <Route path="/Connect" element={<Connect />} />
+
+          <Route path="/AwarenessPrograms" element={<AwarenessPrograms />} />
+
+          <Route path="/Founders" element={<Founders />} />
+
+          <Route path="/ContactUs" element={<ContactUs />} />
+
+
+          <Route path="/Connection-request" element={<ConnectionRequest />} />
+
           <Route path="/Connection-request" element={<ConnectionRequest />} />
         </Routes>
         
         <Routes>
+          
           <Route path="/CareerAwarenessProgram" element={<CareerAwarenessProgram />} />
           <Route path="/ITIndustryCoursePage" element={<ITIndustryCoursePage />} />
           <Route path="/PersonalizedCareerWorkshops" element={<PersonalizedCareerWorkshops />} /> 

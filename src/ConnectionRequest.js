@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './ConnectionRequest.css';
 import { FaLinkedin, FaInstagram, FaGithub, FaCode } from 'react-icons/fa'; // Importing icons
 
 const ConnectionRequest = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     const location = useLocation();
     const alumni = location.state?.alumni; // Use optional chaining
 
