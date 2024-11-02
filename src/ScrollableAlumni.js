@@ -1,71 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // React Router for navigation
 import './ScrollableAlumni.css';
+import alumniData from './data/ConnectionsData.json';
 
-const alumniData = [
-    {
-        name: 'Sai Ram Charan',
-        presntCompany: 'Digital Trust',
-        company: 'Digital Trust',
-        position: 'Software Engineer',
-        location: 'Hyderabad',
-        image: 'https://via.placeholder.com/150',
-        companyLogo: 'https://via.placeholder.com/50',
-    },
-    {
-        name: 'Yaswanth',
-        presntCompany: 'Kharthabook',
-        company: 'Jar, Khathabook',
-        position: 'Growth',
-        location: 'Bangalore',
-        image: 'https://via.placeholder.com/150',
-        companyLogo: 'https://via.placeholder.com/50',
-    },
-    {
-        name: 'Varshitha',
-        presntCompany: 'TCS Digital',
-        company: 'TCS Digital, TA Digital',
-        position: 'Software Engineer',
-        location: 'Hyderabad',
-        image: 'https://via.placeholder.com/150',
-        companyLogo: 'https://via.placeholder.com/50',
-    },
-
-    {
-        name: 'Sai Ram Charan',
-        presntCompany: 'Digital Trust',
-        company: 'Digital Trust',
-        position: 'Software Engineer',
-        location: 'Hyderabad',
-        image: 'https://via.placeholder.com/150',
-        companyLogo: 'https://via.placeholder.com/50',
-    },
-    {
-        name: 'Yaswanth',
-        presntCompany: 'Kharthabook',
-        company: 'Jar, Khathabook',
-        position: 'Growth',
-        location: 'Bangalore',
-        image: 'https://via.placeholder.com/150',
-        companyLogo: 'https://via.placeholder.com/50',
-    },
-    {
-        name: 'Varshitha',
-        presntCompany: 'TCS Digital',
-        company: 'TCS Digital, TA Digital',
-        position: 'Software Engineer',
-        location: 'Hyderabad',
-        image: 'https://via.placeholder.com/150',
-        companyLogo: 'https://via.placeholder.com/50',
-    },
-    // Add more alumni as needed
-];
 
 const ScrollableAlumni = () => {
+    
     const navigate = useNavigate(); // Hook for navigation
 
     const handleNext = () => {
-        navigate('/connect'); // Navigate to the Connect page
+        navigate('/Connect'); // Navigate to the Connect page
     };
 
     return (

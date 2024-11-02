@@ -12,11 +12,12 @@ import DSACoursePage from './DSACoursePage';
 import FullStackProgramPage from './FullStackProgramPage';
 import ITIndustryCoursePage from './ITIndustryCoursePage';
 import RegistrationPage from './RegistrationPage';
-import Connect from './Connect';
 import ConnectionRequest from './ConnectionRequest';
 import AwarenessPrograms from './AwarenessPrograms';
 import Founders from './Founders';
 import ContactUs from './ContactUs';
+import SendRequest from './SendRequest';
+import Connect from './Connect';
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
 
           <Route path="/Connection-request" element={<ConnectionRequest />} />
 
-          <Route path="/Connection-request" element={<ConnectionRequest />} />
+          <Route path="/SendRequest" element={<SendRequest />} />
         </Routes>
         
         <Routes>

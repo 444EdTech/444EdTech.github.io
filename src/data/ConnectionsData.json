@@ -1,0 +1,52 @@
+[
+    {
+      "name": "Sai Ram Charan",
+      "email": "tsr.charan@gmail.com",
+      "company": "Digital Trust",
+      "position": "Software Engineer",
+      "location": "Hyderabad",
+      "image": "https://media.licdn.com/dms/image/v2/D5603AQEvJ9nG1d4Yow/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1722534296446?e=1735776000&v=beta&t=-N8eKB7LQ5JA77twD5UlH9_JS4tDUF6texqZFBcixDY",
+      "linkedin": "https://www.linkedin.com/in/sairamcharan",
+      "instagram": "https://www.instagram.com/sairamcharan/",
+      "leetcode": "https://leetcode.com/sairamcharan/",
+      "gfg": "https://www.geeksforgeeks.org/user/sairamcharan/",
+      "description": "I am a passionate software engineer with experience in developing scalable web applications. I enjoy tackling complex problems and am always eager to learn new technologies."
+    },
+    {
+      "name": "Yaswanth",
+      "email": "tsr.charan@gmail.com",
+      "company": "Jar, Khathabook",
+      "position": "Growth",
+      "location": "Bangalore",
+      "image": "https://media.licdn.com/dms/image/v2/D5603AQG5JtkaomrP_A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1703251847322?e=2147483647&v=beta&t=13BHhVS0EYL7TsplR3MJ0gRjEp6R927pz3ilUVFYUro",
+      "linkedin": "https://www.linkedin.com/in/sairamcharan",
+      "instagram": "https://www.instagram.com/sairamcharan/",
+      "description": "I am a passionate software engineer with experience in developing scalable web applications. I enjoy tackling complex problems and am always eager to learn new technologies."
+    },
+    {
+      "name": "Varshitha Kotari",
+      "email": "tsr.charan@gmail.com",
+      "company": "TCS Digital, TA Digital",
+      "position": "Software Engineer",
+      "location": "Hyderabad",
+      "image": "https://media.licdn.com/dms/image/v2/D5616AQG5wXx5_W4UPA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1708404867385?e=1735776000&v=beta&t=59gJir3UMmPnuymziT1sKBdCdj2eZW76W-t1ZBQy5W4",
+      "linkedin": "https://www.linkedin.com/in/sairamcharan",
+      "instagram": "https://www.instagram.com/sairamcharan/",
+      "leetcode": "https://leetcode.com/sairamcharan/",
+      "gfg": "https://www.geeksforgeeks.org/user/sairamcharan/",
+      "description": "I am a passionate software engineer with experience in developing scalable web applications. I enjoy tackling complex problems and am always eager to learn new technologies."
+    },
+    {
+      "name": "Sripad",
+      "email": "tsr.charan@gmail.com",
+      "company": "Amazon",
+      "position": "SDE - 2",
+      "location": "Hyderabad",
+      "image": "https://media.licdn.com/dms/image/v2/C5603AQEfImMnSXt5Kw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1588685202004?e=1735776000&v=beta&t=qSVdjVBdBw-cc-uNwlKFgwdflZkmfLKcqy2NK3OkDq0",
+      "linkedin": "https://www.linkedin.com/in/sairamcharan",
+      "instagram": "https://www.instagram.com/sairamcharan/",
+      "leetcode": "https://leetcode.com/sairamcharan/",
+      "gfg": "https://www.geeksforgeeks.org/user/sairamcharan/",
+      "description": "I am a passionate software engineer with experience in developing scalable web applications. I enjoy tackling complex problems and am always eager to learn new technologies."
+    }
+  ]  

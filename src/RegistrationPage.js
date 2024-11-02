@@ -3,7 +3,7 @@ import './CoursePageCss.css'; // Ensure this path is correct
 
 const RegistrationPage = () => {
     // Replace this URL with your actual Google Form URL
-    const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfmhjMZrs1S0REWAnqiHTzZChX9GpTNGKDIfswtyub5_QcW_w/viewform";
+    const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSduhZcqj_qoo-0F48c96LyqLVCwB02Yc0DoRl71Ut49-q586A/viewform";
 
     return (
         <div className="RegistrationPage" style={{ paddingTop: '65px' }}>

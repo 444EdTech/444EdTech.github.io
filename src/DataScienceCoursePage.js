@@ -1,5 +1,6 @@
 import './CoursePageCss.css';
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const DataScienceCoursePage = () => {
 
@@ -79,9 +80,12 @@ const DataScienceCoursePage = () => {
                 <p>
                 <strong>Cost:</strong> $99
                 </p>
-                <a className="btn btn-primary" href="#" role="button">
-                Register Now
-                </a>
+                {/* Registration Button */}
+                <div className="text-center">
+                    <Link to="/RegistrationPage" className="btn btn-primary btn-lg" role="button">
+                        Register Now
+                    </Link>
+                </div>
             </div>
             </div>
 

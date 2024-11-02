@@ -1,0 +1,36 @@
+.send-request-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f3ee;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #6a1b9a; /* Title color */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-primary {
+    background-color: #6a1b9a;
+}
+
+.btn-primary:hover {
+    background-color: #4a148c; /* Darker shade on hover */
+}

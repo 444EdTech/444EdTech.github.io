@@ -78,11 +78,12 @@ const PersonalizedCareerWorkshops = () => {
             <p className="text-center">Time: 9:00 AM - 5:00 PM</p>
             <p className="text-center">Location: Online</p>
             <p className="text-center">Cost: Rs.444 per program</p>
+            {/* Registration Button */}
             <div className="text-center">
-              <a className="btn btn-primary btn-lg" href="#" role="button">
-                Register Now
-              </a>
-            </div>
+                    <Link to="/RegistrationPage" className="btn btn-primary btn-lg" role="button">
+                        Register Now
+                    </Link>
+                </div>
           </div>
         </div>
       </div>

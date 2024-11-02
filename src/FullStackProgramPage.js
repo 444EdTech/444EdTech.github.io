@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './CoursePageCss.css'; // Ensure this path is correct
+import { Link } from 'react-router-dom';
 
 const FullStackProgramPage = () => {
 
@@ -73,10 +74,11 @@ const FullStackProgramPage = () => {
                 <p><strong>Location:</strong> 789 Pine Street, Anytown USA</p>
                 <p><strong>Cost:</strong> $99</p>
 
+                {/* Registration Button */}
                 <div className="text-center">
-                    <a className="btn btn-primary btn-lg" href="#" role="button">
+                    <Link to="/RegistrationPage" className="btn btn-primary btn-lg" role="button">
                         Register Now
-                    </a>
+                    </Link>
                 </div>
 
             </div>

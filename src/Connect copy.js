@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import alumniData from './data/ConnectionsData.json'; // Adjust the path as needed
+import alumniData from './data/ConnectionData.json'; // Adjust the path as needed
 import AlumniCard from './AlumniCard';
 import SearchBar from './SearchBar';
 import './Connect.css';
 
 function Connect() {
-  const [alumniList, setAlumniList] = useState(alumniData);
+  const [alumniList, setAlumniList] = useState(alumniData); // Initialize with imported data
   const [companyName, setCompanyName] = useState('');
   const [jobTitle, setJobTitle] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   // Function to filter the alumni based on search input
   const searchAlumni = () => {
@@ -20,7 +22,7 @@ function Connect() {
   };
 
   return (
-    <div id="AlumniCard" style={{ paddingTop: '78px' }}>
+    <div id="AlumniCard" style={{ paddingTop: '65px' }}>
       <div className="header-section">
         <h1>Because Impact Matters</h1>
         <SearchBar

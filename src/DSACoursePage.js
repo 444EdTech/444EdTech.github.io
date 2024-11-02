@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './CoursePageCss.css';
 import React, { useEffect } from 'react';
 
@@ -75,7 +76,12 @@ const DSAWorkshopPage = () => {
                 <p><strong>Time:</strong> 9:00 AM - 5:00 PM</p>
                 <p><strong>Location:</strong> 456 Elm Street, Anytown USA</p>
                 <p><strong>Cost:</strong> $99</p>
-                <a className="btn btn-primary" href="#" role="button">Register Now</a>
+                {/* Registration Button */}
+                <div className="text-center">
+                    <Link to="/RegistrationPage" className="btn btn-primary btn-lg" role="button">
+                        Register Now
+                    </Link>
+                </div>
             </div>
         </div>
 
