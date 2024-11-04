@@ -1,35 +1,62 @@
 [
     {
-      "name": "Sai Ram Charan",
-      "email": "tsr.charan@gmail.com",
-      "company": "Digital Trust",
-      "position": "Software Engineer",
-      "location": "Hyderabad",
-      "image": "https://media.licdn.com/dms/image/v2/D5603AQEvJ9nG1d4Yow/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1722534296446?e=1735776000&v=beta&t=-N8eKB7LQ5JA77twD5UlH9_JS4tDUF6texqZFBcixDY",
-      "linkedin": "https://www.linkedin.com/in/sairamcharan",
-      "instagram": "https://www.instagram.com/sairamcharan/",
-      "leetcode": "https://leetcode.com/sairamcharan/",
-      "gfg": "https://www.geeksforgeeks.org/user/sairamcharan/",
-      "description": "I am a passionate software engineer with experience in developing scalable web applications. I enjoy tackling complex problems and am always eager to learn new technologies."
+        "name": "Sai Ram Charan",
+        "college": "SRKR Engineering College",
+        "email": "sairamcharan@gmail.com",
+        "phone": "9999999999",
+        "presentCompany": "Digital Trust",
+        "pastCompanies": [],
+        "currentLocation": "Hyderabad",
+        "currentPosition": "SDE-1",
+        "btechStream": "Computer Science Engineering",
+        "skills": ["JavaScript", "React", "Node.js", "CSS", "HTML"],
+        "image": "https://media.licdn.com/dms/image/v2/D5603AQEvJ9nG1d4Yow/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1722534296446?e=1735776000&v=beta&t=-N8eKB7LQ5JA77twD5UlH9_JS4tDUF6texqZFBcixDY",
+        "profiles": {
+            "LinkedIn": "https://www.linkedin.com/in/sai-ram-charan-t/",
+            "LeetCode": "https://leetcode.com/u/TSR_CHARAN/",
+            "GFG": "https://www.geeksforgeeks.org/user/srct/",
+            "HackerRank": "https://www.hackerrank.com/profile/tsr_charan"
+        },
+        "description": "I am a passionate software engineer with experience in developing scalable web applications."
     },
     {
-      "name": "Yaswanth",
-      "email": "pallapothuyaswanth@gmail.com",
-      "company": "Khathabook, Jar",
-      "position": "Growth",
-      "location": "Bangalore",
-      "image": "https://media.licdn.com/dms/image/v2/D5603AQG5JtkaomrP_A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1703251847322?e=2147483647&v=beta&t=13BHhVS0EYL7TsplR3MJ0gRjEp6R927pz3ilUVFYUro",
-      "linkedin": "https://www.linkedin.com/in/yaswanth-pallapothu/",
-      "description": "I am a passionate software engineer with experience in developing scalable web applications. I enjoy tackling complex problems and am always eager to learn new technologies."
+        "name": "Yaswanth",
+        "college": "SRKR Engineering College",
+        "email": "pallapothuyaswanth@gmail.com",
+        "phone": "9999999999",
+        "presentCompany": "Khathabook",
+        "pastCompanies": ["Jar"],
+        "currentLocation": "Bangalore",
+        "currentPosition": "Growth",
+        "btechStream": "Computer Science Engineering",
+        "skills": ["Marketing", "Data Analysis", "Product Management"],
+        "image": "https://media.licdn.com/dms/image/v2/D5603AQG5JtkaomrP_A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1703251847322?e=2147483647&v=beta&t=13BHhVS0EYL7TsplR3MJ0gRjEp6R927pz3ilUVFYUro",
+        "profiles": {
+            "LinkedIn": "https://www.linkedin.com/in/yaswanth-pallapothu/",
+            "GFG": "",
+            "LeetCode": "",
+            "HackerRank": ""
+        },
+        "description": ""
     },
     {
-      "name": "Varshitha Kotari",
-      "email": "varshithakotari14@gmail.com",
-      "company": "TCS Digital, TA Digital",
-      "position": "Software Engineer",
-      "location": "Hyderabad",
-      "image": "https://media.licdn.com/dms/image/v2/D5616AQG5wXx5_W4UPA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1708404867385?e=1735776000&v=beta&t=59gJir3UMmPnuymziT1sKBdCdj2eZW76W-t1ZBQy5W4",
-      "linkedin": "https://www.linkedin.com/in/varshitha-kotari-976243212/",
-      "description": "I am a passionate software engineer with experience in developing scalable web applications. I enjoy tackling complex problems and am always eager to learn new technologies."
+        "name": "Varshitha Kotari",
+        "college": "SRKR Engineering College",
+        "email": "varshithakotari14@gmail.com",
+        "phone": "9999999999",
+        "presentCompany": "TCS",
+        "pastCompanies": ["TA Digital"],
+        "currentLocation": "Hyderabad",
+        "currentPosition": "SDE-1",
+        "btechStream": "Computer Science Engineering",
+        "skills": ["JavaScript", "React", "Node.js", "CSS", "HTML"],
+        "image": "https://media.licdn.com/dms/image/v2/D5616AQG5wXx5_W4UPA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1708404867385?e=1735776000&v=beta&t=59gJir3UMmPnuymziT1sKBdCdj2eZW76W-t1ZBQy5W4",
+        "profiles": {
+            "LinkedIn": "https://www.linkedin.com/in/varshitha-kotari-976243212/",
+            "GFG": "",
+            "LeetCode": "",
+            "HackerRank": ""
+        },
+        "description": ""
     }
-  ]  
+  ]

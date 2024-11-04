@@ -5,6 +5,10 @@ import SearchBar from './SearchBar';
 import './Connect.css';
 
 function Connect() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
+
   const [alumniList, setAlumniList] = useState(alumniData);
   const [companyName, setCompanyName] = useState('');
   const [jobTitle, setJobTitle] = useState('');

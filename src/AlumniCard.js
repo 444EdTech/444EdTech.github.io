@@ -8,14 +8,14 @@ function AlumniCard({ alumni }) {
       <div className="card alumni-card shadow-sm">
         <div className="row g-0">
           <div className="col-12 text-center mt-3">
-            <img src={alumni.image} alt={alumni.name} className="img-fluid rounded-circle profile-image" />
+            <img src={alumni.image} alt={alumni.name} className="img-fluid rounded-circle profile-image-card" />
           </div>
           <div className="col-12">
             <div className="card-body text-center">
               <h5 className="card-title alumni-name">{alumni.name}</h5>
-              <p className="card-text"><strong>Company:</strong> {alumni.company}</p>
-              <p className="card-text"><strong>Position:</strong> {alumni.position}</p>
-              <p className="card-text"><strong>Location:</strong> {alumni.location}</p>
+              <p className="card-text"><strong>Company:</strong> {alumni.presentCompany}</p>
+              <p className="card-text"><strong>Position:</strong> {alumni.currentPosition}</p>
+              <p className="card-text"><strong>Location:</strong> {alumni.currentLocation}</p>
               {/* Pass alumni data in state */}
               <Link to="/connection-request" state={{ alumni }}>
                 <button className="btn btn-contact">Know More</button>

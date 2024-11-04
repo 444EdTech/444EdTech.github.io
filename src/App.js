@@ -1,8 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Home from './Home';
 import NavbarComponent from './NavbarComponent';
-import AboutUs from './AboutUs';
 import LandingPage from './LandingPage';
 import Footer from './Footer';
 import CareerAwarenessProgram from './CareerAwarenessProgram';
@@ -40,6 +38,7 @@ function App() {
           <Route path="/Connection-request" element={<ConnectionRequest />} />
 
           <Route path="/SendRequest" element={<SendRequest />} />
+
         </Routes>
         
         <Routes>

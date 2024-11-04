@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './SendRequest.css';
 
 const SendRequest = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const location = useLocation();
     const alumni = location.state?.alumni;
     const [message, setMessage] = useState('');
@@ -46,7 +50,7 @@ const SendRequest = () => {
     return (
         <div className="send-request-container" style={{ padding: '100px' }}>
             <h2>Send Connection Request</h2>
-            <p>Tell why you want to connect with <strong>{alumni.name}</strong>.</p>
+            <h6>Tell why you want to connect with <strong>{alumni.name}</strong>.</h6>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="username">Your Name:</label>

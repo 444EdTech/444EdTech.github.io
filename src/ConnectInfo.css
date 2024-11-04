@@ -1,0 +1,5 @@
+.about-section, .benefits-section, .how-to-section, .who-connect-section, .features-section {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import './ConnectionRequest.css';
-import { FaLinkedin, FaInstagram, FaGithub, FaCode } from 'react-icons/fa'; // Importing icons
 
 const ConnectionRequest = () => {
     useEffect(() => {
@@ -9,68 +8,89 @@ const ConnectionRequest = () => {
     }, []);
 
     const location = useLocation();
-    const alumni = location.state?.alumni; // Use optional chaining
+    const alumni = location.state?.alumni;
 
     if (!alumni) {
-        return <p>No alumni data available.</p>; // Handle case where alumni data is not available
+        return <p>No alumni data available.</p>;
     }
 
     return (
-        <>
-            <div className="ConnectionRequest" style={{ paddingTop: '65px' }}>
-                <div className="connection-request-container">
-                    <div className="profile-content">
-                        <div className="profile-image">
-                            <img src={alumni.image} alt={alumni.name} className="img-fluid" />
-                        </div>
-                        <div className="profile-details">
-                            <h2>{alumni.name}</h2>
-                            <p><strong>Company:</strong> {alumni.company}</p>
-                            <p><strong>Position:</strong> {alumni.position}</p>
-                            <p><strong>Location:</strong> {alumni.location}</p>
+        <div className="ConnectRequest" style={{ paddingTop: '44px' }}>
+            <div className="container my-5">
+                <div className="card shadow-lg">
+                    <div className="row g-0">
+                        <div className="col-md-3 d-flex flex-column align-items-center justify-content-center">
+                            <img
+                                src={alumni.image}
+                                alt={alumni.name}
+                                className="img-fluid rounded-circle p-3"
+                                style={{ width: '200px', height: '200px', objectFit: 'cover' }}
+                            />
 
-                            <div className="social-coding-links">
-                                <p><strong>Profiles:</strong></p>
-                                <div className="links">
-                                    {alumni.linkedin && (
-                                        <p>
-                                            <FaLinkedin />
-                                            <a href={alumni.linkedin} target="_blank" rel="noopener noreferrer"> LinkedIn</a>
-                                        </p>
-                                    )}
-                                    {alumni.instagram && (
-                                        <p>
-                                            <FaInstagram />
-                                            <a href={alumni.instagram} target="_blank" rel="noopener noreferrer"> Instagram</a>
-                                        </p>
-                                    )}
-                                    {alumni.leetcode && (
-                                        <p>
-                                            <FaCode />
-                                            <a href={alumni.leetcode} target="_blank" rel="noopener noreferrer"> LeetCode</a>
-                                        </p>
-                                    )}
-                                    {alumni.gfg && (
-                                        <p>
-                                            <FaGithub />
-                                            <a href={alumni.gfg} target="_blank" rel="noopener noreferrer"> GFG</a>
-                                        </p>
+                            <h2 className="card-title text-primary text-center">{alumni.name}</h2>
+                        </div>
+
+                        <div className="col-md-9">
+                            <div className="card-body">
+
+                                <p className="card-text"><strong>College:</strong> {alumni.college}</p>
+                                <p className="card-text"><strong>Email:</strong> {alumni.email}</p>
+                                {/* <p className="card-text"><strong>Phone:</strong> {alumni.phone}</p> */}
+                                <p className="card-text"><strong>Current Company:</strong> {alumni.presentCompany}</p>
+                                <p className="card-text"><strong>Past Companies:</strong> {alumni.pastCompanies.join(', ')}</p>
+                                <p className="card-text"><strong>Current Location:</strong> {alumni.currentLocation}</p>
+                                <p className="card-text"><strong>Current Position:</strong> {alumni.currentPosition}</p>
+                                <p className="card-text"><strong>BTech Stream:</strong> {alumni.btechStream}</p>
+                                <p className="card-text"><strong>Description:</strong> {alumni.description}</p>
+
+                                <div className="skills mb-3">
+                                    <strong>Skills:</strong>
+                                    <ul className="list-inline">
+                                        {alumni.skills.map((skill, skillIndex) => (
+                                            <li key={skillIndex} className="list-inline-item badge bg-secondary me-1">
+                                                {skill}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                <div className="profiles mb-3">
+                                    {Object.entries(alumni.profiles).some(([_, value]) => value) ? ( // Check if any profile exists
+                                        <>
+                                            <strong>Profiles:</strong>
+                                            <div className="table-responsive mt-2">
+                                                <table className="table table-borderless table-sm">
+                                                    <tbody>
+                                                        {Object.entries(alumni.profiles).map(([key, value]) => (
+                                                            value && (
+                                                                <tr key={key}>
+                                                                    <td className="fw-bold text-capitalize">{key}:</td>
+                                                                    <td>
+                                                                        <a href={value} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                                                                            {value}
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            )
+                                                        ))}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </>
+                                    ) : (
+                                        <p>No profiles available.</p> // Optional message if no profiles exist
                                     )}
                                 </div>
-                            </div>
 
-                            <div className="profile-description">
-                                <h3>About Work</h3>
-                                <p>{alumni.description}</p>
+                                <Link to="/SendRequest" state={{ alumni }}>
+                                    <button type="button" className="btn btn-primary">Send Connection Request</button>
+                                </Link>
                             </div>
-                            <Link to="/SendRequest" state={{ alumni }}>
-                                <button type="submit" className="btn btn-primary">Send Connection Request</button>
-                            </Link>
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
