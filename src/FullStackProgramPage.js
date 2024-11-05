@@ -49,30 +49,30 @@ const FullStackProgramPage = () => {
 
                 <h2>Testimonials</h2>
                 <div className="testimonial">
-                    <img src="https://via.placeholder.com/80" alt="Sam R." />
+                    {/* <img src="https://via.placeholder.com/80" alt="Sam R." /> */}
                     <div>
                         <p>
                             "The Full Stack Workshop equipped me with the skills to create my own applications. Highly recommend!"
                         </p>
-                        <cite>- Sam R.</cite>
+                        <cite>- Jahnavi</cite>
                     </div>
                 </div>
 
                 <div className="testimonial">
-                    <img src="https://via.placeholder.com/80" alt="Alex T." />
+                    {/* <img src="https://via.placeholder.com/80" alt="Alex T." /> */}
                     <div>
                         <p>
                             "Fantastic experience! The projects were engaging and relevant to current industry needs."
                         </p>
-                        <cite>- Alex T.</cite>
+                        <cite>- Devarshi</cite>
                     </div>
                 </div>
 
                 <h2>Workshop Details</h2>
-                <p><strong>Date:</strong> September 22, 2024</p>
-                <p><strong>Time:</strong> 9:00 AM - 5:00 PM</p>
-                <p><strong>Location:</strong> 789 Pine Street, Anytown USA</p>
-                <p><strong>Cost:</strong> $99</p>
+                <p><strong>Date:</strong> To Be Announced</p>
+                <p><strong>Time:</strong> To Be Announced</p>
+                <p><strong>Location:</strong> Online</p>
+                <p><strong>Cost:</strong> Free</p>
 
                 {/* Registration Button */}
                 <div className="text-center">

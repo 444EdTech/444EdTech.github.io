@@ -54,28 +54,28 @@ const DSAWorkshopPage = () => {
                 </ul>
                 <h2>Testimonials</h2>
                 <div className="testimonial">
-                    <img src="https://via.placeholder.com/80" alt="Alex P." />
+                    {/* <img src="https://via.placeholder.com/80" alt="Alex P." /> */}
                     <div>
                         <p>
                             "The DSA Workshop transformed my understanding of algorithms. I'm now more confident in my coding abilities!"
                         </p>
-                        <cite>- Alex P.</cite>
+                        <cite>- Karthik</cite>
                     </div>
                 </div>
                 <div className="testimonial">
-                    <img src="https://via.placeholder.com/80" alt="Jamie L." />
+                    {/* <img src="https://via.placeholder.com/80" alt="Jamie L." /> */}
                     <div>
                         <p>
                             "Fantastic workshop! The hands-on approach made learning enjoyable and effective."
                         </p>
-                        <cite>- Jamie L.</cite>
+                        <cite>- Rupa Sri</cite>
                     </div>
                 </div>
                 <h2>Workshop Details</h2>
-                <p><strong>Date:</strong> September 15, 2024</p>
-                <p><strong>Time:</strong> 9:00 AM - 5:00 PM</p>
-                <p><strong>Location:</strong> 456 Elm Street, Anytown USA</p>
-                <p><strong>Cost:</strong> $99</p>
+                <p><strong>Date:</strong> To Be Announced</p>
+                <p><strong>Time:</strong> To Be Announced </p>
+                <p><strong>Location:</strong> Online</p>
+                <p><strong>Cost:</strong> Free</p>
                 {/* Registration Button */}
                 <div className="text-center">
                     <Link to="/RegistrationPage" className="btn btn-primary btn-lg" role="button">
