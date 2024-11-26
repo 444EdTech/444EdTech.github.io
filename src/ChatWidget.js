@@ -48,73 +48,6 @@ const ChatWidget = () => {
         }
     };
 
-    // const generateResponse = async (userMessage) => {
-    //     try {
-    //         // Build the prompt with conversation history
-    //         const prompt = "Human: Hi you are an expert ChatBot. Please answer my questions." + messages.map(msg => `${msg.sender === 'human' ? 'Human' : 'Bot'}: ${msg.text}`).join('\n') + '\nHuman: ' + userMessage;
-            
-    //         // const response = await fetch('http://localhost:11434/api/generate', {
-    //         //     method: 'POST',
-    //         //     headers: {
-    //         //         'Content-Type': 'application/json',
-    //         //     },
-    //         //     body: JSON.stringify({
-    //         //         model: 'llama3.2',
-    //         //         prompt: prompt, // Include conversation history
-    //         //     }),
-    //         // });
-
-    //         const response = await fetch('https://api.sambanova.ai/v1/chat/completions', {
-    //             method: 'POST',
-    //             headers: {
-    //                 'Authorization': `Bearer 6636c1bb-5070-4d52-b0bd-7e94f45dc9a3`, // Replace with your Hugging Face API key
-    //                 'Content-Type': 'application/json',
-    //             },
-    //             body: JSON.stringify({
-    //                 inputs: prompt, // Include conversation history and user input
-    //             }),
-    //         });
-
-    //         if (!response.ok) {
-    //             throw new Error('Network response was not ok');
-    //         }
-
-    //         // Create a reader to read the response stream
-    //         const reader = response.body.getReader();
-    //         const decoder = new TextDecoder('utf-8');
-    //         let fullResponse = '';
-
-    //         while (true) {
-    //             const { value, done } = await reader.read();
-    //             if (done) break; // Stop reading when done
-
-    //             // Decode the chunk of data
-    //             const chunk = decoder.decode(value, { stream: true });
-                
-    //             // Split into individual JSON strings if the response contains multiple
-    //             const jsonLines = chunk.split('\n').filter(line => line.trim() !== '');
-    //             jsonLines.forEach(line => {
-    //                 try {
-    //                     const parsedChunk = JSON.parse(line);
-    //                     if (parsedChunk.response) {
-    //                         fullResponse += parsedChunk.response; // Collect responses
-    //                     }
-    //                     console.log('Chunk received:', parsedChunk);
-    //                 } catch (parseError) {
-    //                     console.error('Error parsing chunk:', parseError);
-    //                 }
-    //             });
-    //         }
-
-    //         console.log('Complete response:', fullResponse);
-    //         return fullResponse;
-
-    //     } catch (error) {
-    //         console.error('Error fetching data from API:', error);
-    //         return 'Sorry, I could not process your request at this time.';
-    //     }
-    // };
-
     const generateResponse = async (userMessage) => {
         try {
             // Build conversation history for the API
@@ -127,11 +60,13 @@ const ChatWidget = () => {
                 { role: 'user', content: userMessage }
             ];
     
+            const apiKey = process.env.REACT_APP_SAMBANOVA_API_KEY;
+
             // Make the API call
             const response = await fetch('/api/v1/chat/completions', {
                 method: 'POST',
                 headers: {
-                    'Authorization': 'Bearer 10947abe-52b0-4927-ba8a-9267994073a2',
+                    'Authorization': `Bearer ${apiKey}`, // Correct usage of template literal
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
@@ -140,6 +75,7 @@ const ChatWidget = () => {
                     messages: conversation,
                 }),
             });
+
             
     
             if (!response.ok) {
