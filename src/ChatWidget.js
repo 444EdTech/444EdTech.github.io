@@ -131,7 +131,7 @@ const ChatWidget = () => {
             const response = await fetch('/api/v1/chat/completions', {
                 method: 'POST',
                 headers: {
-                    'Authorization': 'Bearer 2d050cb8-c1ec-4c68-954c-9d5f8a72ba36', // Replace 'ABC' with your actual token
+                    'Authorization': 'Bearer 10947abe-52b0-4927-ba8a-9267994073a2',
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
