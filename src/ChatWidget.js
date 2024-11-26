@@ -131,12 +131,12 @@ const ChatWidget = () => {
             const response = await fetch('/api/v1/chat/completions', {
                 method: 'POST',
                 headers: {
-                    'Authorization': 'Bearer 6636c1bb-5070-4d52-b0bd-7e94f45dc9a3', // Replace 'ABC' with your actual token
+                    'Authorization': 'Bearer 2d050cb8-c1ec-4c68-954c-9d5f8a72ba36', // Replace 'ABC' with your actual token
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
                     stream: true,
-                    model: 'Meta-Llama-3.2-3B-Instruct',
+                    model: 'Meta-Llama-3.1-8B-Instruct',
                     messages: conversation,
                 }),
             });
