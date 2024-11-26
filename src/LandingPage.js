@@ -4,8 +4,9 @@ import AboutUs from "./AboutUs";
 import AwarenessPrograms from "./AwarenessPrograms";
 import ContactUs from "./ContactUs";
 import Founders from "./Founders";
-import Home from "./Home";
 import ConnectInfo from './ConnectInfo';
+import Home from './Home';
+import ChatWidget from './ChatWidget';
 
 const LandingPage = () => {
     const { hash } = useLocation();

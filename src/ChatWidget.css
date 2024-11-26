@@ -1,0 +1,90 @@
+.chat-icon {
+    position: fixed;
+    bottom: 80px; /* Space above the icon */
+    right: 20px; /* Position it on the right */
+    background-color: #007bff; /* Blue background for the icon */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.chat-container {
+    position: fixed;
+    bottom: 120px; /* Adjust this value to ensure it doesn't overlap with footer */
+    right: 20px; /* Position it on the right */
+    width: 200px; /* Width of the chat window */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-history {
+    flex-grow: 1; /* Allow this section to grow */
+    max-height: 300px; /* Set a maximum height */
+    padding: 15px;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.chat-message {
+    margin-bottom: 10px;
+}
+
+.user-message {
+    background-color: #d1e7dd; /* Light green for user messages */
+}
+
+.bot-message {
+    background-color: #e2e3e5; /* Light gray for bot messages */
+}
+
+.chat-input {
+    display: flex;
+}
+
+.input-textarea {
+    flex-grow: 1;
+}
+
+.send-button {
+    background-color: #007bff; /* Button color */
+    color: white; 
+}
+
+
+.input-textarea {
+    flex-grow: 1;
+    resize: none; /* Disable resizing */
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.send-button {
+    background-color: #007bff; /* Button color */
+    color: white; 
+    border:none; 
+    padding: 10px 10px; 
+    border-radius: 8px; 
+    cursor:pointer; 
+}
+
+.send-button:hover:not(:disabled) {
+   background-color:#0056b3; /* Darker blue on hover */
+}
+
+.send-button[disabled] {
+   background-color:#ccc; /* Gray when disabled */
+   cursor:not-allowed; /* Change cursor when disabled */
+}

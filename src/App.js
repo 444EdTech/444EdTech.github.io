@@ -16,6 +16,8 @@ import Founders from './Founders';
 import ContactUs from './ContactUs';
 import SendRequest from './SendRequest';
 import Connect from './Connect';
+import ChatGPT from './ChatGPT';
+import ChatWidget from './ChatWidget';
 
 function App() {
   return (
@@ -25,6 +27,10 @@ function App() {
         <NavbarComponent />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+
+          <Route path="/ChatGPT" element={<ChatGPT />} />
+
+          <Route path="/ChatWidget" element={<ChatWidget />} />
 
           <Route path="/Connect" element={<Connect />} />
 
@@ -52,6 +58,7 @@ function App() {
           <Route path="/RegistrationPage" element={<RegistrationPage />} />
         </Routes>
         
+        <ChatWidget />
         <Footer />
       </div>
     </Router>

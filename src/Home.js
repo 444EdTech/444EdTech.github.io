@@ -23,7 +23,7 @@ const Home = () => {
     return (
         <>
             <div className="container-fluid pt-5">
-                <div className="row align-items-center" style={{ minHeight: "100vh" }}>
+                <div className="row align-items-center" style={{ height: "100vh" }}>
                     
                     {/* Left Column with Typing Effect and Text */}
                     <div className="col-sm-8 d-flex flex-column justify-content-center align-items-center">
