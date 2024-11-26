@@ -63,7 +63,7 @@ const ChatWidget = () => {
             const apiKey = process.env.REACT_APP_SAMBANOVA_API_KEY;
 
             // Make the API call
-            const response = await fetch('/api/v1/chat/completions', {
+            const response = await fetch('https://api.sambanova.ai/api/v1/chat/completions', {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${apiKey}`, // Correct usage of template literal
