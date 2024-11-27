@@ -2,12 +2,12 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 module.exports = function (app) {
     app.use(
-        '/api', // Define a local endpoint
+        '/api',
         createProxyMiddleware({
-            target: 'https://api.sambanova.ai', // Target API URL
+            target: 'https://api.sambanova.ai',
             changeOrigin: true,
             pathRewrite: {
-                '^/api': '', // Remove '/api' prefix when forwarding
+                '^/api': '', // Optional: Remove `/api` prefix before sending the request
             },
         })
     );

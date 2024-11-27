@@ -28,9 +28,9 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
 
-          <Route path="/ChatGPT" element={<ChatGPT />} />
+          {/* <Route path="/ChatGPT" element={<ChatGPT />} />
 
-          <Route path="/ChatWidget" element={<ChatWidget />} />
+          <Route path="/ChatWidget" element={<ChatWidget />} /> */}
 
           <Route path="/Connect" element={<Connect />} />
 
@@ -58,7 +58,7 @@ function App() {
           <Route path="/RegistrationPage" element={<RegistrationPage />} />
         </Routes>
         
-        <ChatWidget />
+        {/* <ChatWidget /> */}
         <Footer />
       </div>
     </Router>
