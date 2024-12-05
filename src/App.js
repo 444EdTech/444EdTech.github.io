@@ -16,8 +16,10 @@ import Founders from './Founders';
 import ContactUs from './ContactUs';
 import SendRequest from './SendRequest';
 import Connect from './Connect';
-import ChatGPT from './ChatGPT';
-import ChatWidget from './ChatWidget';
+// import ChatGPT from './ChatGPT';
+// import ChatWidget from './ChatWidget';
+import AlumniApp from './AlumniApp';
+import PaymentLink from './PaymentLink';
 
 function App() {
   return (
@@ -34,6 +36,9 @@ function App() {
 
           <Route path="/Connect" element={<Connect />} />
 
+          <Route path="/AlumniApp" element={<AlumniApp />} />
+
+
           <Route path="/AwarenessPrograms" element={<AwarenessPrograms />} />
 
           <Route path="/Founders" element={<Founders />} />
@@ -44,6 +49,8 @@ function App() {
           <Route path="/Connection-request" element={<ConnectionRequest />} />
 
           <Route path="/SendRequest" element={<SendRequest />} />
+
+          <Route path="/PaymentLink" element={<PaymentLink />} />
 
         </Routes>
         

@@ -1,6 +1,12 @@
 import React, { useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import './ConnectionRequest.css';
+import LinkedInIcon from './icons/LinkedInIcon';
+import LeetCodeIcon from './icons/LeetCodeIcon';
+import GeeksforGeeksIcon from './icons/GeeksforGeeksIcon';
+import HackerRankIcon from './icons/HackerRankIcon';
+import CodeChefIcon from './icons/CodeChefIcon';
+import CodeforcesIcon from './icons/CodeforcesIcon';
 
 const ConnectionRequest = () => {
     useEffect(() => {
@@ -13,6 +19,15 @@ const ConnectionRequest = () => {
     if (!alumni) {
         return <p>No alumni data available.</p>;
     }
+
+    const iconMapping = {
+        LinkedIn: <LinkedInIcon />,
+        LeetCode: <LeetCodeIcon />,
+        GFG: <GeeksforGeeksIcon />,
+        HackerRank: <HackerRankIcon />,
+        CodeChef: <CodeChefIcon />,
+        CodeForces: <CodeforcesIcon />
+    };
 
     return (
         <div className="ConnectRequest" style={{ paddingTop: '44px' }}>
@@ -79,6 +94,32 @@ const ConnectionRequest = () => {
                                         </>
                                     ) : (
                                         <p>No profiles available.</p> // Optional message if no profiles exist
+                                    )}
+                                </div>
+
+                                <div className="profiles mb-3">
+                                    {Object.entries(alumni.profiles).some(([_, value]) => value) ? (
+                                        <>
+                                            <strong>Profiles:</strong>
+                                            <div className="d-flex gap-3 mt-2">
+                                                {Object.entries(alumni.profiles).map(([key, value]) => (
+                                                    value && (
+                                                        <a
+                                                            key={key}
+                                                            href={value}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="text-decoration-none"
+                                                            title={key}
+                                                        >
+                                                            {iconMapping[key]}
+                                                        </a>
+                                                    )
+                                                ))}
+                                            </div>
+                                        </>
+                                    ) : (
+                                        <p>No profiles available.</p>
                                     )}
                                 </div>
 
