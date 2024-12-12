@@ -20,6 +20,8 @@ import Connect from './Connect';
 // import ChatWidget from './ChatWidget';
 import AlumniApp from './AlumniApp';
 import PaymentLink from './PaymentLink';
+import LandingPage1 from './LandingPage1';
+import LandingPage2 from './LandingPage2';
 
 function App() {
   return (
@@ -29,6 +31,10 @@ function App() {
         <NavbarComponent />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+
+          <Route path="/L1" element={<LandingPage1 />} />
+          
+          <Route path="/L2" element={<LandingPage2 />} />
 
           {/* <Route path="/ChatGPT" element={<ChatGPT />} />
 

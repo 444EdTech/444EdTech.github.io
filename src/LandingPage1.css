@@ -1,0 +1,65 @@
+/* Container for all AI cards */
+.ai-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #1f1f2e, #3c3c54); /* Futuristic gradient background */
+    min-height: 100vh;
+}
+
+/* AI Card Styling */
+.ai-card {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background: linear-gradient(145deg, #23233a, #1c1c2b);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(50, 50, 93, 0.25); /* Subtle shadow with glowing effect */
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    z-index: 0;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Glow effect */
+.ai-card::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(235deg, #6f42c1, #3498db, #2ecc71);
+    filter: blur(20px);
+    z-index: -1;
+    opacity: 0.5;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* Hover effect for cards */
+.ai-card:hover::before {
+    opacity: 1;
+}
+
+.ai-card:hover {
+    transform: translateY(-10px) scale(1.03); /* Slightly float and scale */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(50, 50, 93, 0.5); /* Stronger shadow on hover */
+}
+
+/* Content inside the card */
+.ai-card > div {
+    padding: 20px;
+    color: #e5e5e5; /* Light text color for readability */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    width: 100%; /* Ensure content spans the card */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ai-card {
+        max-width: 100%;
+    }
+}

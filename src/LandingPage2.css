@@ -1,0 +1,48 @@
+/* LandingPage.css */
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+} */
+
+section {
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+#Home2 {
+    /* background-image: url('/path/to/home-background.jpg'); */
+    background-color: #282c34; /* Fallback color */
+}
+
+#AboutUs2 {
+    /* background-image: url('/path/to/aboutus-background.jpg'); */
+    background-color: #4a90e2; /* Fallback color */
+}
+
+#AwarenessPrograms2 {
+    /* background-image: url('/path/to/awareness-background.jpg'); */
+    background-color: #7ed321; /* Fallback color */
+}
+
+#ConnectInfo2 {
+    /* background-image: url('/path/to/connect-background.jpg'); */
+    background-color: #d0021b; /* Fallback color */
+}
+
+#Founders2 {
+    /* background-image: url('/path/to/founders-background.jpg'); */
+    background-color: #f5a623; /* Fallback color */
+}
+
+#ContactUs2 {
+    /* background-image: url('/path/to/contact-background.jpg'); */
+    background-color: #9013fe; /* Fallback color */
+}
